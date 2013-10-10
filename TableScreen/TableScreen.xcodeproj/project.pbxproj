@@ -22,7 +22,6 @@
 		B0D18C521802E4B5008D351A /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D18C511802E4B5008D351A /* Cell.m */; };
 		B0D18C571803DEC0008D351A /* right_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D18C561803DEC0008D351A /* right_Arrow.png */; };
 		B0D18C591803DF79008D351A /* Left_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D18C581803DF79008D351A /* Left_Arrow.png */; };
-		B0D18C981806857C008D351A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D18C971806857C008D351A /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		B0D18C511802E4B5008D351A /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		B0D18C561803DEC0008D351A /* right_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_Arrow.png; sourceTree = "<group>"; };
 		B0D18C581803DF79008D351A /* Left_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Left_Arrow.png; sourceTree = "<group>"; };
-		B0D18C971806857C008D351A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D18C981806857C008D351A /* QuartzCore.framework in Frameworks */,
 				B0D18C2B1802E482008D351A /* UIKit.framework in Frameworks */,
 				B0D18C2D1802E482008D351A /* Foundation.framework in Frameworks */,
 				B0D18C2F1802E482008D351A /* CoreGraphics.framework in Frameworks */,
@@ -68,7 +65,6 @@
 		B0D18C1E1802E481008D351A = {
 			isa = PBXGroup;
 			children = (
-				B0D18C971806857C008D351A /* QuartzCore.framework */,
 				B0D18C301802E482008D351A /* TableScreen */,
 				B0D18C291802E482008D351A /* Frameworks */,
 				B0D18C281802E482008D351A /* Products */,
@@ -338,7 +334,6 @@
 				B0D18C4F1802E482008D351A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

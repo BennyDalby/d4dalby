@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "Cell.h"
-#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 
@@ -29,7 +28,6 @@
     table.dataSource=self;
     [self.view addSubview:table];
     table.backgroundColor=[UIColor colorWithRed:161/255.0 green:81/255.0 blue:56/255.0 alpha:1.0];
-   
     
     [self performSelector:@selector(swipscreenleft) withObject:nil afterDelay:2.0];
     [self performSelector:@selector(hideIcons) withObject:nil afterDelay:4.0];
@@ -72,29 +70,68 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 10;
+    return 20;
 
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Cell *cell ;
+//    Cell *cell ;
+//    
+//    cell = (Cell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    if(!cell)
+//    {
+//        cell = [[Cell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"cell"];
+//        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+//        
+//    }
+//
+//    cell.label_name.text=[NSString stringWithFormat:@"Row %d",indexPath.row+1];
+//
+//    cell.label_name.textColor=[UIColor blackColor];//
+//    cell.label_name.backgroundColor=[UIColor clearColor];
+//   // cell.label_name.textAlignment=NSTextAlignmentRight;
+//    
+//    return cell ;
+
+    static NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+   // NSInteger row = indexPath.row;
     
-    cell = (Cell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if(!cell)
-    {
-        cell = [[Cell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"cell"];
-        cell.selectionStyle = UITableViewCellSelectionStyleGray;
-        
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdentifier];
     }
-
-    cell.label_name.text=[NSString stringWithFormat:@"Row %d",indexPath.row+1];
-
-    cell.label_name.textColor=[UIColor blackColor];//
-    cell.label_name.backgroundColor=[UIColor clearColor];
     
-    return cell ;
+    // Setup row background image (a.k.a the set image)
+  
+    
+   // cell.backgroundView = [[UIImageView alloc] initWithImage:setImage];
+  //cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:setImage];
+    
+   // NSString *setName = [[self.wallpaperCollectionArray objectAtIndex:row] valueForKey:@"name"];
+  //  cell.textLabel.text = [setName uppercaseString];
+    cell.textLabel.text=[NSString stringWithFormat:@"Row     %d",indexPath.row+1];
+    cell.textLabel.font = [UIFont fontWithName:@"OpenSans" size:20];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.backgroundColor = [UIColor redColor];    // Not working?
+    cell.textLabel.textAlignment=NSTextAlignmentCenter;   // Not working?
+    
+    //[cell.textLabel setTextAlignment:NSTextAlignmentRight];
+    return cell;
+}
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+  
+
+
+
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+
+    NSLog(@"yoo");
 
 }
 
