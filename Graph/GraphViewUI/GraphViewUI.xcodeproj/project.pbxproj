@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6E94FA917D852E9003F49A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E94FA817D852E9003F49A6 /* Foundation.framework */; };
+		A6E94FAE17D852E9003F49A6 /* GraphViewUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6E94FAD17D852E9003F49A6 /* GraphViewUI.h */; };
+		A6E94FB017D852E9003F49A6 /* GraphViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E94FAF17D852E9003F49A6 /* GraphViewUI.m */; };
+		A6E94FBC17D8535B003F49A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E94FB617D8535B003F49A6 /* ViewController.m */; };
+		A6E94FBD17D8535B003F49A6 /* CustomGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E94FB717D8535B003F49A6 /* CustomGraphView.m */; };
+		A6E94FBE17D8535B003F49A6 /* BOContainerGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E94FB817D8535B003F49A6 /* BOContainerGraphView.m */; };
+		A6E9502D17D871DA003F49A6 /* ViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6E94FB917D8535B003F49A6 /* ViewController.h */; };
+		A6E9502E17D871F6003F49A6 /* CustomGraphView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6E94FBA17D8535B003F49A6 /* CustomGraphView.h */; };
+		A6E9502F17D8720F003F49A6 /* BOContainerGraphView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A6E94FBB17D8535B003F49A6 /* BOContainerGraphView.h */; };
+		A6E9503A17D8A190003F49A6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E9503917D8A190003F49A6 /* CoreFoundation.framework */; };
+		A6E9504017D8A191003F49A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6E9503E17D8A191003F49A6 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6E94FA317D852E9003F49A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				A6E9502F17D8720F003F49A6 /* BOContainerGraphView.h in CopyFiles */,
+				A6E9502E17D871F6003F49A6 /* CustomGraphView.h in CopyFiles */,
+				A6E9502D17D871DA003F49A6 /* ViewController.h in CopyFiles */,
+				A6E94FAE17D852E9003F49A6 /* GraphViewUI.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A6E94FA517D852E9003F49A6 /* libGraphViewUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGraphViewUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E94FA817D852E9003F49A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6E94FAC17D852E9003F49A6 /* GraphViewUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphViewUI-Prefix.pch"; sourceTree = "<group>"; };
+		A6E94FAD17D852E9003F49A6 /* GraphViewUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewUI.h; sourceTree = "<group>"; };
+		A6E94FAF17D852E9003F49A6 /* GraphViewUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewUI.m; sourceTree = "<group>"; };
+		A6E94FB617D8535B003F49A6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6E94FB717D8535B003F49A6 /* CustomGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGraphView.m; sourceTree = "<group>"; };
+		A6E94FB817D8535B003F49A6 /* BOContainerGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOContainerGraphView.m; sourceTree = "<group>"; };
+		A6E94FB917D8535B003F49A6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6E94FBA17D8535B003F49A6 /* CustomGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGraphView.h; sourceTree = "<group>"; };
+		A6E94FBB17D8535B003F49A6 /* BOContainerGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOContainerGraphView.h; sourceTree = "<group>"; };
+		A6E94FBF17D853A1003F49A6 /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		A6E9503217D88610003F49A6 /* button_blue_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blue_close.png; sourceTree = "<group>"; };
+		A6E9503817D8A190003F49A6 /* GraphControllerXib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphControllerXib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E9503917D8A190003F49A6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A6E9503D17D8A191003F49A6 /* GraphControllerXib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphControllerXib-Info.plist"; sourceTree = "<group>"; };
+		A6E9503F17D8A191003F49A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6E9504117D8A191003F49A6 /* GraphControllerXib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphControllerXib-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E94FA217D852E9003F49A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E94FA917D852E9003F49A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E9503517D8A190003F49A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E9503A17D8A190003F49A6 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E94F9C17D852E9003F49A6 = {
+			isa = PBXGroup;
+			children = (
+				A6E94FAA17D852E9003F49A6 /* GraphViewUI */,
+				A6E9503B17D8A190003F49A6 /* GraphControllerXib */,
+				A6E94FA717D852E9003F49A6 /* Frameworks */,
+				A6E94FA617D852E9003F49A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E94FA617D852E9003F49A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E94FA517D852E9003F49A6 /* libGraphViewUI.a */,
+				A6E9503817D8A190003F49A6 /* GraphControllerXib.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6E94FA717D852E9003F49A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6E94FA817D852E9003F49A6 /* Foundation.framework */,
+				A6E9503917D8A190003F49A6 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6E94FAA17D852E9003F49A6 /* GraphViewUI */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9503217D88610003F49A6 /* button_blue_close.png */,
+				A6E94FBF17D853A1003F49A6 /* Enums.h */,
+				A6E94FB617D8535B003F49A6 /* ViewController.m */,
+				A6E94FB717D8535B003F49A6 /* CustomGraphView.m */,
+				A6E94FB817D8535B003F49A6 /* BOContainerGraphView.m */,
+				A6E94FB917D8535B003F49A6 /* ViewController.h */,
+				A6E94FBA17D8535B003F49A6 /* CustomGraphView.h */,
+				A6E94FBB17D8535B003F49A6 /* BOContainerGraphView.h */,
+				A6E94FAD17D852E9003F49A6 /* GraphViewUI.h */,
+				A6E94FAF17D852E9003F49A6 /* GraphViewUI.m */,
+				A6E94FAB17D852E9003F49A6 /* Supporting Files */,
+			);
+			path = GraphViewUI;
+			sourceTree = "<group>";
+		};
+		A6E94FAB17D852E9003F49A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E94FAC17D852E9003F49A6 /* GraphViewUI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E9503B17D8A190003F49A6 /* GraphControllerXib */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9503C17D8A191003F49A6 /* Supporting Files */,
+			);
+			path = GraphControllerXib;
+			sourceTree = "<group>";
+		};
+		A6E9503C17D8A191003F49A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E9503D17D8A191003F49A6 /* GraphControllerXib-Info.plist */,
+				A6E9503E17D8A191003F49A6 /* InfoPlist.strings */,
+				A6E9504117D8A191003F49A6 /* GraphControllerXib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6E94FA417D852E9003F49A6 /* GraphViewUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E94FB317D852E9003F49A6 /* Build configuration list for PBXNativeTarget "GraphViewUI" */;
+			buildPhases = (
+				A6E94FA117D852E9003F49A6 /* Sources */,
+				A6E94FA217D852E9003F49A6 /* Frameworks */,
+				A6E94FA317D852E9003F49A6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphViewUI;
+			productName = GraphViewUI;
+			productReference = A6E94FA517D852E9003F49A6 /* libGraphViewUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A6E9503717D8A190003F49A6 /* GraphControllerXib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E9504217D8A191003F49A6 /* Build configuration list for PBXNativeTarget "GraphControllerXib" */;
+			buildPhases = (
+				A6E9503417D8A190003F49A6 /* Sources */,
+				A6E9503517D8A190003F49A6 /* Frameworks */,
+				A6E9503617D8A190003F49A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphControllerXib;
+			productName = GraphControllerXib;
+			productReference = A6E9503817D8A190003F49A6 /* GraphControllerXib.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E94F9D17D852E9003F49A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = praseeda.manissery;
+			};
+			buildConfigurationList = A6E94FA017D852E9003F49A6 /* Build configuration list for PBXProject "GraphViewUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6E94F9C17D852E9003F49A6;
+			productRefGroup = A6E94FA617D852E9003F49A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6E94FA417D852E9003F49A6 /* GraphViewUI */,
+				A6E9503717D8A190003F49A6 /* GraphControllerXib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6E9503617D8A190003F49A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E9504017D8A191003F49A6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6E94FA117D852E9003F49A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E94FB017D852E9003F49A6 /* GraphViewUI.m in Sources */,
+				A6E94FBC17D8535B003F49A6 /* ViewController.m in Sources */,
+				A6E94FBD17D8535B003F49A6 /* CustomGraphView.m in Sources */,
+				A6E94FBE17D8535B003F49A6 /* BOContainerGraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E9503417D8A190003F49A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6E9503E17D8A191003F49A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E9503F17D8A191003F49A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6E94FB117D852E9003F49A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6E94FB217D852E9003F49A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6E94FB417D852E9003F49A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GraphViewUI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphViewUI/GraphViewUI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A6E94FB517D852E9003F49A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GraphViewUI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphViewUI/GraphViewUI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A6E9504317D8A191003F49A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphControllerXib/GraphControllerXib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "GraphControllerXib/GraphControllerXib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A6E9504417D8A191003F49A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphControllerXib/GraphControllerXib-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "GraphControllerXib/GraphControllerXib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6E94FA017D852E9003F49A6 /* Build configuration list for PBXProject "GraphViewUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E94FB117D852E9003F49A6 /* Debug */,
+				A6E94FB217D852E9003F49A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E94FB317D852E9003F49A6 /* Build configuration list for PBXNativeTarget "GraphViewUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E94FB417D852E9003F49A6 /* Debug */,
+				A6E94FB517D852E9003F49A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E9504217D8A191003F49A6 /* Build configuration list for PBXNativeTarget "GraphControllerXib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E9504317D8A191003F49A6 /* Debug */,
+				A6E9504417D8A191003F49A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E94F9D17D852E9003F49A6 /* Project object */;
+}

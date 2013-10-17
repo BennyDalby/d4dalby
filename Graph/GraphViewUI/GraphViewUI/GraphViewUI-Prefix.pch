@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GraphViewUI' target in the 'GraphViewUI' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
